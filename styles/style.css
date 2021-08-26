@@ -2,8 +2,8 @@
 
 :root{
   /*  Declare variables here!  */
-  --placeholder-color: grey;
-  --background-color: rgba(192, 192, 192, 0.7);
+  --placeholder-color: rgb(252, 255, 85);
+  --background-color: rgba(0, 0, 0, 0.7);
   --background-gradient: linear-gradient(115deg,rgba(192, 192, 192, 0.8),rgba(255, 255, 255, 0.7))
   --form-color: rgba(67, 67, 67, 0.5);
 }
