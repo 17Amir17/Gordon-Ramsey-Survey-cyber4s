@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root{
+  /*  Declare variables here!  */
+  --placeholder-color: grey;
+  --background-color: rgba(192, 192, 192, 0.7);
+  --background-gradient: linear-gradient(115deg,rgba(192, 192, 192, 0.8),rgba(255, 255, 255, 0.7))
+  --form-color: rgba(67, 67, 67, 0.5);
+}
+
+.main{
+/*   text-align: center; */
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+}
+
+body{
+  background: var(--background-color);
+  background-image: linear-gradient(115deg,rgba(192, 192, 192, 0.8),rgba(255, 255, 255, 0.7)),
+    url("https://bit.ly/3gwTRcB");
+    background-size: cover;
+}
+
+input{
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input[type='text']{
+    width: 100%;
+}
+input[type='email']{
+    width: 100%;
+}
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
+}
+select{
+   font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.maain {
+    background-color: var(--background-color, grey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#title{
+  text-align: center;
+  font-size: 3rem;
+}
+
+#description{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#survey-form{
+  padding:1em;
+  text-align: left;
+  margin: auto;
+  height: 60%;
+  width: 40%;
+  border-radius: 2em;
+  background: var(--form-color, grey);
+}
+
+::placeholder{
+  color: var(--placeholder-color, red);
+}
+#disabled-option{
+  color: var(--placeholder-color, red);
+}

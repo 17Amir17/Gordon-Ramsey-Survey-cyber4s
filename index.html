@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>Gordon Survey</title>
+</head>
+<body>
+    <div class='main'>
+        <div class='survey'>
+          <h1 id='title'> Gordon Ramsey Survey </h1>
+          <p id='description'> What do you think about gordon? </p>
+          <form id='survey-form'>
+            <label id='name-label' for='name-input'>Name:</label><br>
+            <input id='name' type="text" name="name-input" placeholder="your name" required><br>
+            
+            <label id ='email-label' for='email-input'>Email:</label><br>
+            <input id='email' type="email" name="email-input" placeholder="random@gmail.com" required><br>
+            
+            <label id='number-label' for='age-input'>Age:</label><br>
+            <input id='number' min="10" max="99" type="number" name="name-input" placeholder="18" required><br>
+            
+            <label for='dropdown' id='dropdown-label'>What type of cook are you?</label><br>
+            <select name="cars" id="dropdown">
+              <option id='disabled-option' value="" disabled selected>Select your option</option>
+              <option value="zero">Not a cook</option>
+              <option value="amature">Home cook</option>
+              <option value="intermidiate">Home Chef</option>
+              <option value="pro">Chef</option>
+            </select><br>
+            
+            <p>
+              What are your general thoughts about Gordon:<br>
+              <input type="radio" id="dont-care" name="gen-thoughts" value="DontCare">
+              <label for="dont-care">Don't Care</label>
+              <input type="radio" id="like" name="gen-thoughts" value="Like">
+              <label for="like">Like Him</label>
+              <input type="radio" id="hate" name="gen-thoughts" value="Hate">
+              <label for="hate">Hate Him</label>
+            </p>
+            
+            <p>
+              What foods do you like?<br>
+              <input type="checkbox" id="meat" name="food1" value="Meat">
+              <label for="meat">Meat</label>
+              <input type="checkbox" id="dairy" name="food2" value="Dairy">
+              <label for="dairy">Dairy</label>
+              <input type="checkbox" id="vegan" name="food3" value="Vegan">
+              <label for="vegan">Vegan</label>
+            </p>
+            
+            <p>
+              Tell Us EVERYTHING what are your thoughts on Ramsey?<br>
+              <textarea id="thoughtstextarea" name="thoughts" placeholder="Enter your thoughts here..."></textarea>
+            </p>
+            <input id = 'submit' type="submit" value="Submit Survey!">
+          <form>
+        </div>
+      </div>      
+</body>
+</html>
